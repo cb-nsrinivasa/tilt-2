@@ -11,4 +11,5 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Log commit ID
-        run: echo "Commit ID: ${{ github.sha }}"
+        run: |
+          echo "Commit ID: $GITHUB_SHA" 
