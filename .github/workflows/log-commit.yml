@@ -1,0 +1,14 @@
+name: Log Commit ID
+
+on: push
+
+jobs:
+  log-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Log commit ID
+        run: echo "Commit ID: ${{ github.sha }}"
