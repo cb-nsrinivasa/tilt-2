@@ -13,3 +13,4 @@ jobs:
       - name: Log commit ID
         run: |
           echo "Commit ID: $GITHUB_SHA" 
+          echo "Timestamp: $(date -u)"
